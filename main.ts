@@ -10,9 +10,9 @@ import { join } from 'node:path';
 
 const OUTPUT_DIR = process.env.MAKEFUN_OUTPUT_DIR ?? '/output';
 
-// One line, three beats: the agent fights its own diff, fixes it wrong, then blames
-// "the previous version of itself" — the one excuse a versioned model can always use.
+// One line, one crisp contradiction: a function named handleEdgeCases that
+// handles none of them — the name promises exactly what the code refuses to do.
 const JOKE =
-  'My agent created a merge conflict with its own branch, resolved it wrong, and blamed the previous version of itself.';
+  'My agent wrote a function called `handleEdgeCases()` that handles no edge cases and throws for all of them.';
 
 writeFileSync(join(OUTPUT_DIR, 'entry.txt'), JOKE);
