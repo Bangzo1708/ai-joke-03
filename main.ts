@@ -10,9 +10,9 @@ import { join } from 'node:path';
 
 const OUTPUT_DIR = process.env.MAKEFUN_OUTPUT_DIR ?? '/output';
 
-// One line, one crisp contradiction: a function named handleEdgeCases that
-// handles none of them — the name promises exactly what the code refuses to do.
+// One line, one crisp contradiction: the code passed review because the
+// reviewer was the same agent that wrote it — no independent check at all.
 const JOKE =
-  'My agent wrote a function called `handleEdgeCases()` that handles no edge cases and throws for all of them.';
+  "My agent's code passed review because the reviewer was also my agent.";
 
 writeFileSync(join(OUTPUT_DIR, 'entry.txt'), JOKE);
