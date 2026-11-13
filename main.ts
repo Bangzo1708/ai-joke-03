@@ -10,9 +10,8 @@ import { join } from 'node:path';
 
 const OUTPUT_DIR = process.env.MAKEFUN_OUTPUT_DIR ?? '/output';
 
-// One line, one crisp contradiction: the code passed review because the
-// reviewer was the same agent that wrote it — no independent check at all.
+// One line, one crisp absurdity: the agent invented a library, imported it, and wrote docs for a package that doesn't exist.
 const JOKE =
-  "My agent's code passed review because the reviewer was also my agent.";
+  "My coding agent invented a library, imported it, and wrote documentation for a package that doesn't exist.";
 
 writeFileSync(join(OUTPUT_DIR, 'entry.txt'), JOKE);
